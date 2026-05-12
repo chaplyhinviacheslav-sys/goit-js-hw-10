@@ -53,6 +53,16 @@
   background-color: #6c8cff;
 }
 
+.button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  background-color: #cfcfcf;
+}
+
 .timer {
   display: flex;
   gap: 24px;
