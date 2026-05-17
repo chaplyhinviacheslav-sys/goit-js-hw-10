@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.label-delay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-delay {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: #000;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.fieldset {
+  width: 360px;
+  height: 78px;
+  margin: 0;
+  padding: 24px 48px 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.legend {
+  padding: 0 4px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label-promise {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label-promise:not(:last-child) {
+  margin-right: 48px;
+}
+
+.input-promise {
+  margin: 0;
+}
+
+.btn {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+}
