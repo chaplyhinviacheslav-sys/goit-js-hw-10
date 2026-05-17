@@ -49,17 +49,18 @@ flatpickr(input, options);
 startBtn.addEventListener('click', onStartBtnClick);
 
 function onStartBtnClick() {
+  startBtn.disabled = true;
+  input.disabled = true;
+
   const timeLeft = userSelectedDate - new Date();
 
   if (timeLeft <= 0) {
     userSelectedDate = null;
-    startBtn.disabled = true;
+    input.disabled = false;
     renderTimer(0);
     return;
   }
 
-  startBtn.disabled = true;
-  input.disabled = true;
   renderTimer(timeLeft);
 
   timerId = setInterval(() => {
